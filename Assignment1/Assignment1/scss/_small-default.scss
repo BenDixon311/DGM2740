@@ -1,0 +1,111 @@
+/* CSS Document */
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* HEADER STYLING */
+header {
+	padding: 2em;
+	background-color: $primaryColor;
+	max-width: $maxWidth;
+	margin: auto;
+	
+	 h1 {
+	font-family: $mainFont;
+	font-size: 36px;
+	
+	}
+
+	 h2 {
+	font-family: $mainFont;
+	font-weight: 300;
+	}
+	
+}
+
+/* NAVIGATION STYLING */
+
+nav {
+	max-width: $maxWidth;
+	background-color: $secondaryColor;
+	margin: auto;
+	border-bottom: 1px solid rgba(0,0,0,0.3);
+	border-top: 1px solid rgba(0,0,0,0.3);
+	
+	ul li {
+		float: left; /*makes nav items from left to right */
+		width: 25%;
+		border-right: 1px solid rgba(0,0,0,0.3);
+	}
+	
+	ul li:last-child {
+		border-rigth: none;
+	}
+	
+	ul li a {
+		display: block;
+		text-align: center;
+		padding: .5rem 0;
+		color: skyblue;
+		text-decoration: none;
+		font-family: $mainFont;
+		font-weight: 400;
+		transition: background 0.5s ease, color 0.5s ease;
+	}
+	
+	
+	ul li.active a {
+		background-color: darken($secondaryColor, 10%);
+	}
+	
+	ul li a:hover {
+		color: $secondaryColor;
+		background-color: $primaryColor;
+	}
+	
+}
+
+
+/* MAIN CONTENT STYLING */
+
+main {
+	height: 100%;
+	max-width: $maxWidth;
+	margin: auto;
+	
+	
+	
+	
+}
+
+div.image {
+	
+}
+
+
+
+   
+/* FOOTER STYLING */
+footer {
+	font-family: $mainFont;
+	background-color: $primaryColor;
+	max-width: $maxWidth;
+    text-align: center;
+    padding: .75rem 0;
+    margin: auto;
+	
+	p {
+	
+}
+
+}
+
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}

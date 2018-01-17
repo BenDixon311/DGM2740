@@ -1,0 +1,125 @@
+/* CSS Document */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* CSS Document */
+/* CSS Document */
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/*  apply a natural box layout model to all elements  */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* HEADER STYLING */
+header {
+  padding: 2em;
+  background-color: skyblue;
+  max-width: 75rem;
+  margin: auto; }
+  header h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 36px; }
+  header h2 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300; }
+
+/* NAVIGATION STYLING */
+nav {
+  max-width: 75rem;
+  background-color: slategrey;
+  margin: auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-top: 1px solid rgba(0, 0, 0, 0.3); }
+  nav ul li {
+    float: left;
+    /*makes nav items from left to right */
+    width: 25%;
+    border-right: 1px solid rgba(0, 0, 0, 0.3); }
+  nav ul li:last-child {
+    border-rigth: none; }
+  nav ul li a {
+    display: block;
+    text-align: center;
+    padding: .5rem 0;
+    color: skyblue;
+    text-decoration: none;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    transition: background 0.5s ease, color 0.5s ease; }
+  nav ul li.active a {
+    background-color: #5a6773; }
+  nav ul li a:hover {
+    color: slategrey;
+    background-color: skyblue; }
+
+/* MAIN CONTENT STYLING */
+main {
+  height: 100%;
+  max-width: 75rem;
+  margin: auto; }
+
+/* FOOTER STYLING */
+footer {
+  font-family: "Oswald", sans-serif;
+  background-color: skyblue;
+  max-width: 75rem;
+  text-align: center;
+  padding: .75rem 0;
+  margin: auto; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* CSS Document */
+/* CSS Document */
